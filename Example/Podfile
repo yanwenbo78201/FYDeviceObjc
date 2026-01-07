@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FYDeviceObjc_Example' do
+  pod 'FYDeviceObjc', :path => '../'
+
+  target 'FYDeviceObjc_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
