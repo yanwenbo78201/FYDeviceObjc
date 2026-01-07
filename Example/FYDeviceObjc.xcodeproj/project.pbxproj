@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F48D38602ED4F773D36A93 /* FYDeviceObjc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FYDeviceObjc.podspec; path = ../FYDeviceObjc.podspec; sourceTree = "<group>"; };
+		01F48D38602ED4F773D36A93 /* FYDeviceObjc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FYDeviceObjc.podspec; path = ../FYDeviceObjc.podspec; sourceTree = "<group>"; };
 		4343EC55A48EA1AA6C85A111 /* Pods_FYDeviceObjc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYDeviceObjc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* FYDeviceObjc_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYDeviceObjc_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,11 +60,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		66EB52BD31ED6D17610217B5 /* Pods-FYDeviceObjc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYDeviceObjc_Example.release.xcconfig"; path = "Target Support Files/Pods-FYDeviceObjc_Example/Pods-FYDeviceObjc_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79FC167629B7ED44E1939252 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		79FC167629B7ED44E1939252 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BDEB31EB945ECCD9E21C52B /* Pods-FYDeviceObjc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYDeviceObjc_Example.debug.xcconfig"; path = "Target Support Files/Pods-FYDeviceObjc_Example/Pods-FYDeviceObjc_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9FB31858120282D1B1E51F83 /* Pods-FYDeviceObjc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYDeviceObjc_Tests.release.xcconfig"; path = "Target Support Files/Pods-FYDeviceObjc_Tests/Pods-FYDeviceObjc_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C2512044BBED637CFF31D867 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C2512044BBED637CFF31D867 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EFE2FA7645E795F5DF4580BF /* Pods-FYDeviceObjc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYDeviceObjc_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FYDeviceObjc_Tests/Pods-FYDeviceObjc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D8E756FCFC6C27501B8F9C /* Pods_FYDeviceObjc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYDeviceObjc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EFE2FA7645E795F5DF4580BF /* Pods-FYDeviceObjc_Tests.debug.xcconfig */,
 				9FB31858120282D1B1E51F83 /* Pods-FYDeviceObjc_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

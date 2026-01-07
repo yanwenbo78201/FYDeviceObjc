@@ -7,27 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06BF476F9BBE4E100E78FAC153CCA778 /* FYDeviceObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C8A888B9A57523831F03E6CA24D5AB /* FYDeviceObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09747351C6D0D728EEB182438235DF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		1F889A8AFBCABF75970664F725E14E9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		63E595AD3DADDADD0F60101B6EC23E85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		688E0484D5916A3316ADE6B560FF250F /* FYDeviceObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCE0BDDF064EA04E180A4EC3250584 /* FYDeviceObjc-dummy.m */; };
+		33B99F328E95D7A827B68821FEE62B42 /* SkilingStorageUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 01ED763658752B1D97E50494D837333A /* SkilingStorageUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551D18AE8592B5A82FC1D255166D0860 /* SkilingSystemUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0CDEC55FE3C57349F398FE45F8ED8FC /* SkilingSystemUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AB3EEA027D9BDB948650AD3779312FB /* FYFYDeviceObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AF455C48E0438E667355CC4118C679 /* FYFYDeviceObjc.m */; };
 		80EDDC3D839541EB67124D0487F4B668 /* Pods-FYDeviceObjc_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F0C84AA300B513EF254CA8CDA73E0 /* Pods-FYDeviceObjc_Tests-dummy.m */; };
+		97CB34547224CE0C1B7F8DC955261291 /* SkilingCommutieUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3834870FA44485D3471D4460AD58DC /* SkilingCommutieUtil.m */; };
+		A48D5A2324FBE52AD06B068557A5F668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		B655AFAD09DE3534CFDC2FBF4CB0AD7C /* Pods-FYDeviceObjc_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF62CA3FFDB0DA6ED99756C8A8E4A3 /* Pods-FYDeviceObjc_Example-dummy.m */; };
+		B77AEA92AC9214C2A7F38A8A4DA35BAE /* FYDeviceObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8923DFE2D0EBFD96426BA85801145F /* FYDeviceObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D106482EADFE4FEF809D166F9F85A7E9 /* SkilingStorageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F00ACCBD56761C2BCCC60499ADB098 /* SkilingStorageUtil.m */; };
+		D45CA9AC3DD01353568009BF8F1AC662 /* FYDeviceObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 738843C8FA3D684EFAB3EEEE75014CEA /* FYDeviceObjc-dummy.m */; };
 		D623185EC0F0A2D596284934CF3E9462 /* Pods-FYDeviceObjc_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 426945A34BA2C7A0211D84EF20364C53 /* Pods-FYDeviceObjc_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E033DA6F0BD45A2370B8D94A518FD825 /* SkilingSystemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F77436F28164AF761425701D08FDD231 /* SkilingSystemUtil.m */; };
 		E03A21F2D5286FF46898A5816050D411 /* Pods-FYDeviceObjc_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2053E0404E9D9AFBBCE38E432289148 /* Pods-FYDeviceObjc_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9C8637C6CE95FC35568769CDDD39838 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 297568D021A2FB085999A80EB0A932ED /* ReplaceMe.m */; };
+		E1DDE874831C42D3647375CABA5541B7 /* FYFYDeviceObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F666F3495DA9249EF8F6D26EA82E6B5 /* FYFYDeviceObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6AE6BDE1A9DCCB6F261CCEEC0ED64E0 /* SkilingCommutieUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF2AC03459C53D4325E06B3DE4803FD /* SkilingCommutieUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E3B3B8183633227BDEFB9A7CC4CE04F /* PBXContainerItemProxy */ = {
+		2D97ABEFA7AF80EC9D5B25DA261BF2FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8AACF7B36024BD923C0B0FCDBE5019C3;
 			remoteInfo = "Pods-FYDeviceObjc_Example";
 		};
-		EFEA8007DAB0123120A53AF2653B64E8 /* PBXContainerItemProxy */ = {
+		41C15EDE5BA9AFAEAC34C24677686CA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,39 +44,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01CA834CA85EEE2A92C6A12D5BA76A2B /* FYDeviceObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYDeviceObjc-prefix.pch"; sourceTree = "<group>"; };
-		04F74CB7B74577563A8893125A493ACB /* FYDeviceObjc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FYDeviceObjc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		16C8A888B9A57523831F03E6CA24D5AB /* FYDeviceObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYDeviceObjc-umbrella.h"; sourceTree = "<group>"; };
-		192248732ED8BCD19E3BF9A054041380 /* FYDeviceObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FYDeviceObjc.modulemap; sourceTree = "<group>"; };
-		2494918489161EB8446B9D363EAFC41E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		2768A2F84922A3E35594D114A159D41A /* FYDeviceObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYDeviceObjc.debug.xcconfig; sourceTree = "<group>"; };
-		27D2FC74CD8F6FE6F2035E954D3C4EFA /* FYDeviceObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYDeviceObjc.release.xcconfig; sourceTree = "<group>"; };
+		01ED763658752B1D97E50494D837333A /* SkilingStorageUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SkilingStorageUtil.h; path = FYDeviceObjc/Classes/SkilingStorageUtil.h; sourceTree = "<group>"; };
+		1CB67C59E3705E35373F827CA587C82B /* FYDeviceObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYDeviceObjc.release.xcconfig; sourceTree = "<group>"; };
+		1F43EF28F2E71C574EBECFE488C7902E /* FYDeviceObjc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FYDeviceObjc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		27ECC4891FDECC3A24DE26440F65C93C /* Pods-FYDeviceObjc_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYDeviceObjc_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		297568D021A2FB085999A80EB0A932ED /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = FYDeviceObjc/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		2ED635E2E1C2B88B58DC8A255EB6AFBE /* Pods-FYDeviceObjc_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FYDeviceObjc_Example.modulemap"; sourceTree = "<group>"; };
 		36D4560FB9FE8AC1166D77D7DE08CDC9 /* Pods-FYDeviceObjc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FYDeviceObjc_Example-frameworks.sh"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		397CC4CA32E46A66CEED18A5AAEBF7B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		426945A34BA2C7A0211D84EF20364C53 /* Pods-FYDeviceObjc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYDeviceObjc_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4D190245F93BD89D2C664D0A91B9183F /* Pods-FYDeviceObjc_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FYDeviceObjc_Example"; path = Pods_FYDeviceObjc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		516F86C1F80CE23FC32C00E22B0F12C2 /* Pods-FYDeviceObjc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYDeviceObjc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5779A7CC7647CF99B0D7DCC6F6A0F4CC /* FYDeviceObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FYDeviceObjc.modulemap; sourceTree = "<group>"; };
 		58250CED73917ACB6248B0EB6400C1CA /* Pods-FYDeviceObjc_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FYDeviceObjc_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5B32F40019AEA5713CB8FA4A15712608 /* Pods-FYDeviceObjc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FYDeviceObjc_Tests.modulemap"; sourceTree = "<group>"; };
 		66EECBF56A4AF32270A1CFFEE395F276 /* Pods-FYDeviceObjc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYDeviceObjc_Example-Info.plist"; sourceTree = "<group>"; };
+		6C3834870FA44485D3471D4460AD58DC /* SkilingCommutieUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SkilingCommutieUtil.m; path = FYDeviceObjc/Classes/SkilingCommutieUtil.m; sourceTree = "<group>"; };
+		738843C8FA3D684EFAB3EEEE75014CEA /* FYDeviceObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FYDeviceObjc-dummy.m"; sourceTree = "<group>"; };
 		75648ED2FB25610D43303FBA2C52845F /* Pods-FYDeviceObjc_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FYDeviceObjc_Tests"; path = Pods_FYDeviceObjc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90DCE0BDDF064EA04E180A4EC3250584 /* FYDeviceObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FYDeviceObjc-dummy.m"; sourceTree = "<group>"; };
+		76F00ACCBD56761C2BCCC60499ADB098 /* SkilingStorageUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SkilingStorageUtil.m; path = FYDeviceObjc/Classes/SkilingStorageUtil.m; sourceTree = "<group>"; };
 		966F0C84AA300B513EF254CA8CDA73E0 /* Pods-FYDeviceObjc_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYDeviceObjc_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F666F3495DA9249EF8F6D26EA82E6B5 /* FYFYDeviceObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYFYDeviceObjc.h; path = FYDeviceObjc/Classes/FYFYDeviceObjc.h; sourceTree = "<group>"; };
+		A0CDEC55FE3C57349F398FE45F8ED8FC /* SkilingSystemUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SkilingSystemUtil.h; path = FYDeviceObjc/Classes/SkilingSystemUtil.h; sourceTree = "<group>"; };
+		A5802B04A66F6910DE916A41ED15403D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ACB9B07C3BD168F61C37866791148460 /* FYDeviceObjc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FYDeviceObjc-Info.plist"; sourceTree = "<group>"; };
 		AD6B8AE22358ACAF066A918F401F78FD /* FYDeviceObjc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FYDeviceObjc; path = FYDeviceObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB296C8FA0B2542E7A34869219934484 /* FYDeviceObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FYDeviceObjc.debug.xcconfig; sourceTree = "<group>"; };
 		C65070040431D797CF7D9C44FB472CF0 /* Pods-FYDeviceObjc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYDeviceObjc_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CDE79FAE8F6E427A1ECBEDFB91723A1F /* Pods-FYDeviceObjc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYDeviceObjc_Tests-Info.plist"; sourceTree = "<group>"; };
+		CDF2AC03459C53D4325E06B3DE4803FD /* SkilingCommutieUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SkilingCommutieUtil.h; path = FYDeviceObjc/Classes/SkilingCommutieUtil.h; sourceTree = "<group>"; };
+		D04CE68074905CC14F97C0264A488540 /* FYDeviceObjc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYDeviceObjc-prefix.pch"; sourceTree = "<group>"; };
 		D41535704EE649A7F571762E0A603293 /* Pods-FYDeviceObjc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FYDeviceObjc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DADF62CA3FFDB0DA6ED99756C8A8E4A3 /* Pods-FYDeviceObjc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FYDeviceObjc_Example-dummy.m"; sourceTree = "<group>"; };
 		DF4346322BBACF0D4628403EFBFCC786 /* Pods-FYDeviceObjc_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FYDeviceObjc_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2053E0404E9D9AFBBCE38E432289148 /* Pods-FYDeviceObjc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FYDeviceObjc_Example-umbrella.h"; sourceTree = "<group>"; };
-		E89677620771B8E34E3A88654D62ED70 /* FYDeviceObjc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FYDeviceObjc-Info.plist"; sourceTree = "<group>"; };
+		E6AF455C48E0438E667355CC4118C679 /* FYFYDeviceObjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYFYDeviceObjc.m; path = FYDeviceObjc/Classes/FYFYDeviceObjc.m; sourceTree = "<group>"; };
 		EA298AE047B6F30ABFA547404060CBA9 /* Pods-FYDeviceObjc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYDeviceObjc_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EAC1DCCE171A16DFCD2E53F00F4507C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F77436F28164AF761425701D08FDD231 /* SkilingSystemUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SkilingSystemUtil.m; path = FYDeviceObjc/Classes/SkilingSystemUtil.m; sourceTree = "<group>"; };
 		F8467DB77BF512977570CEC57C38F86F /* Pods-FYDeviceObjc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FYDeviceObjc_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FE8923DFE2D0EBFD96426BA85801145F /* FYDeviceObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FYDeviceObjc-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +103,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0A50F641A0F67A73E496C7827F6A295 /* Frameworks */ = {
+		F13377B19B283B7FB30B9C8C55727E56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E595AD3DADDADD0F60101B6EC23E85 /* Foundation.framework in Frameworks */,
+				A48D5A2324FBE52AD06B068557A5F668 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A187DD6B25575792BF24FBD9830E963 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C883C271DE9EFC8AEC5519918A015392 /* FYDeviceObjc */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		5A02798D8ED58F858195F21824C541DC /* Pods-FYDeviceObjc_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,27 +139,26 @@
 			path = "Target Support Files/Pods-FYDeviceObjc_Example";
 			sourceTree = "<group>";
 		};
-		5EC2640B41B22CE8FC9207D681F7CC59 /* FYDeviceObjc */ = {
+		6524A1A08B046D427D8DCD5639B9B9CD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				297568D021A2FB085999A80EB0A932ED /* ReplaceMe.m */,
-				E782F8603C175758C4CE512F7710A13C /* Pod */,
-				7EA411415C4C041C464C49FAEDE9D5CA /* Support Files */,
+				1F43EF28F2E71C574EBECFE488C7902E /* FYDeviceObjc.podspec */,
+				EAC1DCCE171A16DFCD2E53F00F4507C2 /* LICENSE */,
+				A5802B04A66F6910DE916A41ED15403D /* README.md */,
 			);
-			name = FYDeviceObjc;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		7EA411415C4C041C464C49FAEDE9D5CA /* Support Files */ = {
+		87FFA803453D02ACDEF2289A72E5581F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				192248732ED8BCD19E3BF9A054041380 /* FYDeviceObjc.modulemap */,
-				90DCE0BDDF064EA04E180A4EC3250584 /* FYDeviceObjc-dummy.m */,
-				E89677620771B8E34E3A88654D62ED70 /* FYDeviceObjc-Info.plist */,
-				01CA834CA85EEE2A92C6A12D5BA76A2B /* FYDeviceObjc-prefix.pch */,
-				16C8A888B9A57523831F03E6CA24D5AB /* FYDeviceObjc-umbrella.h */,
-				2768A2F84922A3E35594D114A159D41A /* FYDeviceObjc.debug.xcconfig */,
-				27D2FC74CD8F6FE6F2035E954D3C4EFA /* FYDeviceObjc.release.xcconfig */,
+				5779A7CC7647CF99B0D7DCC6F6A0F4CC /* FYDeviceObjc.modulemap */,
+				738843C8FA3D684EFAB3EEEE75014CEA /* FYDeviceObjc-dummy.m */,
+				ACB9B07C3BD168F61C37866791148460 /* FYDeviceObjc-Info.plist */,
+				D04CE68074905CC14F97C0264A488540 /* FYDeviceObjc-prefix.pch */,
+				FE8923DFE2D0EBFD96426BA85801145F /* FYDeviceObjc-umbrella.h */,
+				BB296C8FA0B2542E7A34869219934484 /* FYDeviceObjc.debug.xcconfig */,
+				1CB67C59E3705E35373F827CA587C82B /* FYDeviceObjc.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FYDeviceObjc";
@@ -169,23 +190,33 @@
 			path = "Target Support Files/Pods-FYDeviceObjc_Tests";
 			sourceTree = "<group>";
 		};
+		C883C271DE9EFC8AEC5519918A015392 /* FYDeviceObjc */ = {
+			isa = PBXGroup;
+			children = (
+				9F666F3495DA9249EF8F6D26EA82E6B5 /* FYFYDeviceObjc.h */,
+				E6AF455C48E0438E667355CC4118C679 /* FYFYDeviceObjc.m */,
+				CDF2AC03459C53D4325E06B3DE4803FD /* SkilingCommutieUtil.h */,
+				6C3834870FA44485D3471D4460AD58DC /* SkilingCommutieUtil.m */,
+				01ED763658752B1D97E50494D837333A /* SkilingStorageUtil.h */,
+				76F00ACCBD56761C2BCCC60499ADB098 /* SkilingStorageUtil.m */,
+				A0CDEC55FE3C57349F398FE45F8ED8FC /* SkilingSystemUtil.h */,
+				F77436F28164AF761425701D08FDD231 /* SkilingSystemUtil.m */,
+				6524A1A08B046D427D8DCD5639B9B9CD /* Pod */,
+				87FFA803453D02ACDEF2289A72E5581F /* Support Files */,
+			);
+			name = FYDeviceObjc;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D0AA37D8481DA490A8AB2969F191C643 /* Development Pods */,
+				4A187DD6B25575792BF24FBD9830E963 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				A30EA7843ECA22A4D7F163060C584995 /* Products */,
 				D8F4651299CC7DD4F15A74E2FF15F0DC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0AA37D8481DA490A8AB2969F191C643 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5EC2640B41B22CE8FC9207D681F7CC59 /* FYDeviceObjc */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -213,16 +244,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E782F8603C175758C4CE512F7710A13C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				04F74CB7B74577563A8893125A493ACB /* FYDeviceObjc.podspec */,
-				2494918489161EB8446B9D363EAFC41E /* LICENSE */,
-				397CC4CA32E46A66CEED18A5AAEBF7B0 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,6 +255,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81C6FFD1D4E6B4244BC5863D5E174FD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77AEA92AC9214C2A7F38A8A4DA35BAE /* FYDeviceObjc-umbrella.h in Headers */,
+				E1DDE874831C42D3647375CABA5541B7 /* FYFYDeviceObjc.h in Headers */,
+				E6AE6BDE1A9DCCB6F261CCEEC0ED64E0 /* SkilingCommutieUtil.h in Headers */,
+				33B99F328E95D7A827B68821FEE62B42 /* SkilingStorageUtil.h in Headers */,
+				551D18AE8592B5A82FC1D255166D0860 /* SkilingSystemUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D25BD3F10F749E3BB2B6186D5F8B10C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,25 +275,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3E703D641A014E935B3CE0635C3738F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				06BF476F9BBE4E100E78FAC153CCA778 /* FYDeviceObjc-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		019693580FF02842D05D70508A462050 /* FYDeviceObjc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF6A2155ACAA1A7129A8108D7DBFC75A /* Build configuration list for PBXNativeTarget "FYDeviceObjc" */;
+			buildConfigurationList = B06D90899E1C54C474D12DA0E2D3ADFC /* Build configuration list for PBXNativeTarget "FYDeviceObjc" */;
 			buildPhases = (
-				E3E703D641A014E935B3CE0635C3738F /* Headers */,
-				D7576E1478A329BE0F1C49A97FD9926A /* Sources */,
-				B0A50F641A0F67A73E496C7827F6A295 /* Frameworks */,
-				17A2057245DF60E32310E2C6819B5A0B /* Resources */,
+				81C6FFD1D4E6B4244BC5863D5E174FD6 /* Headers */,
+				8C71B554AD6DEE91EC8616C9103D830C /* Sources */,
+				F13377B19B283B7FB30B9C8C55727E56 /* Frameworks */,
+				ED0827168AF87E59569767E3B5C319C1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +308,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B11607371BEC8B0DE1CE4E198B8D107B /* PBXTargetDependency */,
+				974DBCF2D0363BB868093F8AAA784FAD /* PBXTargetDependency */,
 			);
 			name = "Pods-FYDeviceObjc_Example";
 			productName = Pods_FYDeviceObjc_Example;
@@ -302,7 +327,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				68709CAD0E1608F84E5715CA6A3F12D8 /* PBXTargetDependency */,
+				B7CD1864EF55C26F0102F1A6C98A80B0 /* PBXTargetDependency */,
 			);
 			name = "Pods-FYDeviceObjc_Tests";
 			productName = Pods_FYDeviceObjc_Tests;
@@ -341,13 +366,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		17A2057245DF60E32310E2C6819B5A0B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3B0E93313127972220FB3109756B2920 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,23 +380,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED0827168AF87E59569767E3B5C319C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C71B554AD6DEE91EC8616C9103D830C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45CA9AC3DD01353568009BF8F1AC662 /* FYDeviceObjc-dummy.m in Sources */,
+				6AB3EEA027D9BDB948650AD3779312FB /* FYFYDeviceObjc.m in Sources */,
+				97CB34547224CE0C1B7F8DC955261291 /* SkilingCommutieUtil.m in Sources */,
+				D106482EADFE4FEF809D166F9F85A7E9 /* SkilingStorageUtil.m in Sources */,
+				E033DA6F0BD45A2370B8D94A518FD825 /* SkilingSystemUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6B6256ABB89446D4D2AF64608DF99E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				80EDDC3D839541EB67124D0487F4B668 /* Pods-FYDeviceObjc_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7576E1478A329BE0F1C49A97FD9926A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				688E0484D5916A3316ADE6B560FF250F /* FYDeviceObjc-dummy.m in Sources */,
-				E9C8637C6CE95FC35568769CDDD39838 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,24 +421,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68709CAD0E1608F84E5715CA6A3F12D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FYDeviceObjc_Example";
-			target = 8AACF7B36024BD923C0B0FCDBE5019C3 /* Pods-FYDeviceObjc_Example */;
-			targetProxy = 0E3B3B8183633227BDEFB9A7CC4CE04F /* PBXContainerItemProxy */;
-		};
-		B11607371BEC8B0DE1CE4E198B8D107B /* PBXTargetDependency */ = {
+		974DBCF2D0363BB868093F8AAA784FAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FYDeviceObjc;
 			target = 019693580FF02842D05D70508A462050 /* FYDeviceObjc */;
-			targetProxy = EFEA8007DAB0123120A53AF2653B64E8 /* PBXContainerItemProxy */;
+			targetProxy = 41C15EDE5BA9AFAEAC34C24677686CA8 /* PBXContainerItemProxy */;
+		};
+		B7CD1864EF55C26F0102F1A6C98A80B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FYDeviceObjc_Example";
+			target = 8AACF7B36024BD923C0B0FCDBE5019C3 /* Pods-FYDeviceObjc_Example */;
+			targetProxy = 2D97ABEFA7AF80EC9D5B25DA261BF2FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02C1B1F402ECCE51B87542E905A0B46E /* Release */ = {
+		45309C9F3FB74193860DAA83682B2C74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27D2FC74CD8F6FE6F2035E954D3C4EFA /* FYDeviceObjc.release.xcconfig */;
+			baseConfigurationReference = 1CB67C59E3705E35373F827CA587C82B /* FYDeviceObjc.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -578,6 +606,41 @@
 			};
 			name = Release;
 		};
+		BFAD4A99D67834BEC781792A3CF8E3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB296C8FA0B2542E7A34869219934484 /* FYDeviceObjc.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FYDeviceObjc/FYDeviceObjc-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FYDeviceObjc/FYDeviceObjc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FYDeviceObjc/FYDeviceObjc.modulemap";
+				PRODUCT_MODULE_NAME = FYDeviceObjc;
+				PRODUCT_NAME = FYDeviceObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -641,41 +704,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		E264F0DFFB50EE088E1C885E45FA11A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2768A2F84922A3E35594D114A159D41A /* FYDeviceObjc.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FYDeviceObjc/FYDeviceObjc-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FYDeviceObjc/FYDeviceObjc-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FYDeviceObjc/FYDeviceObjc.modulemap";
-				PRODUCT_MODULE_NAME = FYDeviceObjc;
-				PRODUCT_NAME = FYDeviceObjc;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -770,20 +798,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B06D90899E1C54C474D12DA0E2D3ADFC /* Build configuration list for PBXNativeTarget "FYDeviceObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAD4A99D67834BEC781792A3CF8E3B7 /* Debug */,
+				45309C9F3FB74193860DAA83682B2C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F18DC451CC859C3EF12F510D6014518C /* Build configuration list for PBXNativeTarget "Pods-FYDeviceObjc_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0AC3C2FD17E779724EDBAB94C70B020 /* Debug */,
 				95355E9039B5697D51BD586AC6D1663B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF6A2155ACAA1A7129A8108D7DBFC75A /* Build configuration list for PBXNativeTarget "FYDeviceObjc" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E264F0DFFB50EE088E1C885E45FA11A7 /* Debug */,
-				02C1B1F402ECCE51B87542E905A0B46E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
