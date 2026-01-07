@@ -1,0 +1,16 @@
+PODS:
+  - FYDeviceObjc (0.1.0)
+
+DEPENDENCIES:
+  - FYDeviceObjc (from `../`)
+
+EXTERNAL SOURCES:
+  FYDeviceObjc:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FYDeviceObjc: 5cc94447bf4ecbae5a1f8a6a22a0a083383c1d8b
+
+PODFILE CHECKSUM: d0dbacc1aae102d212e39450adfd60bc00f8f48a
+
+COCOAPODS: 1.16.2

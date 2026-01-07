@@ -1,0 +1,6 @@
+framework module Pods_FYDeviceObjc_Example {
+  umbrella header "Pods-FYDeviceObjc_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

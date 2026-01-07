@@ -1,0 +1,6 @@
+framework module FYDeviceObjc {
+  umbrella header "FYDeviceObjc-umbrella.h"
+
+  export *
+  module * { export * }
+}
