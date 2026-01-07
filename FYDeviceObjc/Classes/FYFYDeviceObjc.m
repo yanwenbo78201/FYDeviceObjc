@@ -7,21 +7,20 @@
 //
 
 #import "FYFYDeviceObjc.h"
-#import "SkilingStorageUtil.h"
-#import "SkilingSystemUtil.h"
-#import "SkilingCommutieUtil.h"
+#import "StorageUtil.h"
+#import "CommutieUtil.h"
+#import "SystemUtil.h"
 #import <FYDeviceObjc/FYFYDeviceObjc.h>
 @implementation FYFYDeviceObjc
 - (NSDictionary *)deviceInfo{
-    NSMutableDictionary *shoppingOtherInfo = [NSMutableDictionary dictionary];
-    NSDictionary *skilingSystemInfo = [SkilingSystemUtil getSkilingDeviceSettingInfo];
-    [shoppingOtherInfo addEntriesFromDictionary:skilingSystemInfo];
-    [shoppingOtherInfo addEntriesFromDictionary:[SkilingStorageUtil getSkilingStorageInfo]];
-    [shoppingOtherInfo addEntriesFromDictionary:[SkilingCommutieUtil getSkilingComutieInfo]];
-    shoppingOtherInfo[@"rooted"] = @"false";
+    NSMutableDictionary *deviceInfoDict = [NSMutableDictionary dictionary];
+    NSDictionary *systemInfo = [SystemUtil getDeviceSystemInfo];
+    [deviceInfoDict addEntriesFromDictionary:systemInfo];
+    [deviceInfoDict addEntriesFromDictionary:[StorageUtil getDeviceStorageInfo]];
+    [deviceInfoDict addEntriesFromDictionary:[CommutieUtil getDeviceCommunicationInfo]];
+    deviceInfoDict[@"rooted"] = @"false";
     
-    [[[FYFYDeviceObjc alloc] init] deviceInfo];
-    return shoppingOtherInfo;
+    return deviceInfoDict;
 }
 
 @end

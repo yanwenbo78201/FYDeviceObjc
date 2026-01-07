@@ -1,81 +1,81 @@
 //
-//  SkilingSystemUtil.m
+//  SystemUtil.m
 //  CodeSkiingTraining
 //
 //  Created by IndiaComputer on 19/09/25.
 //
 
-#import "SkilingSystemUtil.h"
+#import "SystemUtil.h"
 #import <sys/utsname.h>
 #include <sys/sysctl.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <AdSupport/ASIdentifierManager.h>
 
-@implementation SkilingSystemUtil
-+ (NSDictionary *)getSkilingDeviceSettingInfo{
+@implementation SystemUtil
++ (NSDictionary *)getDeviceSystemInfo{
    
-    NSMutableDictionary *skilingSystemInfo = [NSMutableDictionary dictionary];
-    skilingSystemInfo[@"idfa"] = [SkilingSystemUtil getSkilingDeviceAdvertisingIdentifier];
-    skilingSystemInfo[@"idfv"] = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    skilingSystemInfo[@"phoneMark"] = [[UIDevice currentDevice] name];
-    skilingSystemInfo[@"phoneType"] = [SkilingSystemUtil getSkilingDeviceSettingDeviceType];
-    skilingSystemInfo[@"systemVersions"] = [SkilingSystemUtil getSkilingDeviceSettingDeviceVersion];
-    skilingSystemInfo[@"versionCode"] = [SkilingSystemUtil getSkilingDeviceSettingAppVersion];
-    skilingSystemInfo[@"screenResolution"] = [SkilingSystemUtil getSkilingDeviceSettingScreenResolution];
-    skilingSystemInfo[@"batteryLevel"] = [SkilingSystemUtil getSkilingDeviceBatteryLevel];
+    NSMutableDictionary *systemInfo = [NSMutableDictionary dictionary];
+    systemInfo[@"idfa"] = [SystemUtil getDeviceAdvertisingIdentifier];
+    systemInfo[@"idfv"] = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    systemInfo[@"phoneMark"] = [[UIDevice currentDevice] name];
+    systemInfo[@"phoneType"] = [SystemUtil getDeviceType];
+    systemInfo[@"systemVersions"] = [SystemUtil getDeviceSystemVersion];
+    systemInfo[@"versionCode"] = [SystemUtil getDeviceAppVersion];
+    systemInfo[@"screenResolution"] = [SystemUtil getDeviceScreenResolution];
+    systemInfo[@"batteryLevel"] = [SystemUtil getDeviceBatteryLevel];
     
-    skilingSystemInfo[@"charged"] = [SkilingSystemUtil getSkilingDeviceBatteryCharing];
-    skilingSystemInfo[@"defaultLanguage"] = [SkilingSystemUtil getSkilingDeviceDefaultLanguage];
-    skilingSystemInfo[@"defaultTimeZone"] = [SkilingSystemUtil getSkilingDeviceDefaultTimeZone];
-    skilingSystemInfo[@"screenWidth"] = [NSString stringWithFormat:@"%d",(int)[UIScreen mainScreen].bounds.size.width];
-    skilingSystemInfo[@"screenHeight"] = [NSString stringWithFormat:@"%d",(int)[UIScreen mainScreen].bounds.size.height];
-    skilingSystemInfo[@"cpuNum"] = [SkilingSystemUtil getSkilingDeviceSettingNumberOfCPU];
-    skilingSystemInfo[@"simulated"] = [SkilingSystemUtil getSkilingDeviceIsBelongToSimulator];
-    skilingSystemInfo[@"debugged"] = [SkilingSystemUtil getSkilingDeviceIsAttachedDebugger] == YES ? @"true" : @"false";
-    skilingSystemInfo[@"screenBrightness"] = [SkilingSystemUtil getSkilingDeviceSreenBrightness];
-    return skilingSystemInfo;
+    systemInfo[@"charged"] = [SystemUtil getDeviceBatteryChargingStatus];
+    systemInfo[@"defaultLanguage"] = [SystemUtil getDeviceDefaultLanguage];
+    systemInfo[@"defaultTimeZone"] = [SystemUtil getDeviceDefaultTimeZone];
+    systemInfo[@"screenWidth"] = [NSString stringWithFormat:@"%d",(int)[UIScreen mainScreen].bounds.size.width];
+    systemInfo[@"screenHeight"] = [NSString stringWithFormat:@"%d",(int)[UIScreen mainScreen].bounds.size.height];
+    systemInfo[@"cpuNum"] = [SystemUtil getDeviceCPUCount];
+    systemInfo[@"simulated"] = [SystemUtil isDeviceSimulator];
+    systemInfo[@"debugged"] = [SystemUtil isDeviceAttachedDebugger] == YES ? @"true" : @"false";
+    systemInfo[@"screenBrightness"] = [SystemUtil getDeviceScreenBrightness];
+    return systemInfo;
 }
 
 
 
-+ (NSNumber *)getSkilingDeviceSettingNumberDeviceType{
-    NSNumber *skilingDeviceNumberDeviceType = @0;
++ (NSNumber *)getDeviceTypeNumber{
+    NSNumber *deviceTypeNumber = @0;
    
-    NSString *detailDeviceType = [self getSkilingDeviceSettingDeviceType];
+    NSString *detailDeviceType = [self getDeviceType];
     if ([detailDeviceType hasPrefix:@"iPhone"])
-        skilingDeviceNumberDeviceType = @3;
+        deviceTypeNumber = @3;
     else if ([detailDeviceType hasPrefix:@"iPad"])
-        skilingDeviceNumberDeviceType = @2;
+        deviceTypeNumber = @2;
     else if ([detailDeviceType hasPrefix:@"iMac"] || [detailDeviceType hasPrefix:@"Mac"])
-        skilingDeviceNumberDeviceType = @1;
+        deviceTypeNumber = @1;
 
-    return skilingDeviceNumberDeviceType;
+    return deviceTypeNumber;
 }
 
-+ (NSString *)getSkilingDeviceSettingStrDeviceType{
-    NSString *skilingDeviceStringDeviceType = @"unknown";
-    NSString *detailDeviceType = [self getSkilingDeviceSettingDeviceType];
++ (NSString *)getDeviceTypeString{
+    NSString *deviceTypeString = @"unknown";
+    NSString *detailDeviceType = [self getDeviceType];
     if ([detailDeviceType hasPrefix:@"iPhone"])
-        skilingDeviceStringDeviceType = @"Mobile";
+        deviceTypeString = @"Mobile";
     else if ([detailDeviceType hasPrefix:@"iPad"])
-        skilingDeviceStringDeviceType = @"Tablet";
+        deviceTypeString = @"Tablet";
     else if ([detailDeviceType hasPrefix:@"iMac"] || [detailDeviceType hasPrefix:@"Mac"])
-        skilingDeviceStringDeviceType = @"pc";
-    return skilingDeviceStringDeviceType;
+        deviceTypeString = @"pc";
+    return deviceTypeString;
 }
 
-+ (NSString *)getSkilingDeviceSettingDeviceType{
-    NSString *skilingDeviceType = [self getRawDeviceType];
-    return [self getDeviceNameFromType:skilingDeviceType];
++ (NSString *)getDeviceType{
+    NSString *deviceType = [self getRawDeviceType];
+    return [self getDeviceNameFromType:deviceType];
 }
 
 #pragma mark - Private Helper Methods
 
 + (NSString *)calculateScreenResolution{
-    CGFloat skilingScreenScale = [UIScreen mainScreen].scale;
-    CGRect skilingScreenBounds = [[UIScreen mainScreen] bounds];
-    CGFloat screenResolutionWidth = skilingScreenBounds.size.width * skilingScreenScale;
-    CGFloat screenResolutionHeight = skilingScreenBounds.size.height * skilingScreenScale;
+    CGFloat screenScale = [UIScreen mainScreen].scale;
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGFloat screenResolutionWidth = screenBounds.size.width * screenScale;
+    CGFloat screenResolutionHeight = screenBounds.size.height * screenScale;
     return [NSString stringWithFormat:@"%d-%d",(int)screenResolutionWidth,(int)screenResolutionHeight];
 }
 
@@ -325,28 +325,28 @@
     };
 }
 
-+ (NSString *)getSkilingDeviceSettingDeviceVersion{
++ (NSString *)getDeviceSystemVersion{
     if ([[UIDevice currentDevice] respondsToSelector:@selector(systemVersion)]) {
-        NSString *skilingDeviceVersion = [[UIDevice currentDevice] systemVersion];
-        return skilingDeviceVersion;
+        NSString *deviceVersion = [[UIDevice currentDevice] systemVersion];
+        return deviceVersion;
     } else {
         return @"";
     }
 }
 
-+ (NSString *)getSkilingDeviceSettingAppVersion{
++ (NSString *)getDeviceAppVersion{
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     return version;
 }
 
-+ (NSString *)getSkilingDeviceSettingScreenResolution{
++ (NSString *)getDeviceScreenResolution{
     return [self calculateScreenResolution];
 }
 
-+ (NSString *)getSkilingDeviceSettingNumberOfCPU{
++ (NSString *)getDeviceCPUCount{
     if ([[NSProcessInfo processInfo] respondsToSelector:@selector(processorCount)]) {
-        NSInteger skilingNumberOfCPU = [[NSProcessInfo processInfo] processorCount];
-        return [NSString stringWithFormat:@"%ld",(long)skilingNumberOfCPU];
+        NSInteger cpuCount = [[NSProcessInfo processInfo] processorCount];
+        return [NSString stringWithFormat:@"%ld",(long)cpuCount];
     } else {
         return @"-1";
     }
@@ -354,77 +354,77 @@
 
 
 
-+ (NSNumber *)getSkilingDeviceBatteryLevel{
-    UIDevice *skilingDevice = [UIDevice currentDevice];
-    skilingDevice.batteryMonitoringEnabled = YES;
-    float skilingBatteryLevel = 0.0;
-    float skilingBatteryCharge = [skilingDevice batteryLevel];
-    if (skilingBatteryCharge > 0.0f) {
-        skilingBatteryLevel = skilingBatteryCharge * 100;
-        return @(skilingBatteryLevel);
++ (NSNumber *)getDeviceBatteryLevel{
+    UIDevice *device = [UIDevice currentDevice];
+    device.batteryMonitoringEnabled = YES;
+    float batteryLevel = 0.0;
+    float batteryCharge = [device batteryLevel];
+    if (batteryCharge > 0.0f) {
+        batteryLevel = batteryCharge * 100;
+        return @(batteryLevel);
     } else {
         // Unable to find the battery level
         return @(-1);
     }
 }
 
-+ (NSString *)getSkilingDeviceBatteryCharing{
-    UIDevice *skilingDevice = [UIDevice currentDevice];
-    skilingDevice.batteryMonitoringEnabled = YES;
-    if ([skilingDevice batteryState] == UIDeviceBatteryStateCharging || [skilingDevice batteryState] == UIDeviceBatteryStateFull) {
++ (NSString *)getDeviceBatteryChargingStatus{
+    UIDevice *device = [UIDevice currentDevice];
+    device.batteryMonitoringEnabled = YES;
+    if ([device batteryState] == UIDeviceBatteryStateCharging || [device batteryState] == UIDeviceBatteryStateFull) {
         return @"true";
     } else {
         return @"false";
     }
 }
-+ (NSString *)getSkilingDeviceDefaultLanguage{
-    NSArray *skilingLanguages = [NSLocale preferredLanguages];
++ (NSString *)getDeviceDefaultLanguage{
+    NSArray *languages = [NSLocale preferredLanguages];
     // Get the user's language
-    NSString *skilingLanguage = [skilingLanguages objectAtIndex:0];
-    if (skilingLanguage == nil || skilingLanguage.length <= 0) {
+    NSString *language = [languages objectAtIndex:0];
+    if (language == nil || language.length <= 0) {
         return @"null";
     }
-    return [skilingLanguage componentsSeparatedByString:@"-"].firstObject;
+    return [language componentsSeparatedByString:@"-"].firstObject;
 }
 
-+ (NSString *)getSkilingDeviceDefaultTimeZone{
-    NSTimeZone *skilingTimeZone = [NSTimeZone systemTimeZone];
-    NSString *skilingTimeZoneName = [skilingTimeZone name];
++ (NSString *)getDeviceDefaultTimeZone{
+    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+    NSString *timeZoneName = [timeZone name];
     // Check for validity
-    if (skilingTimeZoneName == nil || skilingTimeZoneName.length <= 0) {
+    if (timeZoneName == nil || timeZoneName.length <= 0) {
         return @"null";
     }
-    return skilingTimeZoneName;
+    return timeZoneName;
 }
 
-+ (NSString *)getSkilingDeviceSreenBrightness{
-    float skilingBrightness = [UIScreen mainScreen].brightness;
-    if (skilingBrightness < 0.0 || skilingBrightness > 1.0) {
++ (NSString *)getDeviceScreenBrightness{
+    float brightness = [UIScreen mainScreen].brightness;
+    if (brightness < 0.0 || brightness > 1.0) {
         return @"-1";
     }
-    return [NSString stringWithFormat:@"%d",(int)(skilingBrightness*100)];
+    return [NSString stringWithFormat:@"%d",(int)(brightness*100)];
 }
 
-+ (BOOL)getSkilingDeviceIsAttachedDebugger{
++ (BOOL)isDeviceAttachedDebugger{
     return [self checkDebuggerAttachment];
 }
 
-+ (NSString *)getSkilingDeviceIsBelongToSimulator{
-    NSString *skilingDeviceType = [self getSkilingDeviceSettingDeviceType];
-    if ([skilingDeviceType containsString:@"Simulator"]) {
++ (NSString *)isDeviceSimulator{
+    NSString *deviceType = [self getDeviceType];
+    if ([deviceType containsString:@"Simulator"]) {
         return @"true";
     }else{
         return @"false";
     }
 }
 
-+ (NSString *)getSkilingDeviceAdvertisingIdentifier{
++ (NSString *)getDeviceAdvertisingIdentifier{
     return [self getAdvertisingIdentifier];
 }
 
-+ (NSString *)getSkilingDeviceSettingDeviceName{
-    UIDevice *skilingDevice = [UIDevice currentDevice];
-    return skilingDevice.name;
++ (NSString *)getDeviceName{
+    UIDevice *device = [UIDevice currentDevice];
+    return device.name;
 }
 
 @end

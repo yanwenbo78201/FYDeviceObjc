@@ -10,10 +10,10 @@
 #endif
 #endif
 
+#import "CommutieUtil.h"
 #import "FYFYDeviceObjc.h"
-#import "SkilingCommutieUtil.h"
-#import "SkilingStorageUtil.h"
-#import "SkilingSystemUtil.h"
+#import "StorageUtil.h"
+#import "SystemUtil.h"
 
 FOUNDATION_EXPORT double FYDeviceObjcVersionNumber;
 FOUNDATION_EXPORT const unsigned char FYDeviceObjcVersionString[];
