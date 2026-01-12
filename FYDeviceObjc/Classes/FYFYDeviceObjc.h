@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FYFYDeviceObjc : NSObject
-- (NSDictionary *)deviceInfo;
+- (NSDictionary *)deviceInfo NS_SWIFT_NAME(deviceInfo());
 @end
 
 NS_ASSUME_NONNULL_END

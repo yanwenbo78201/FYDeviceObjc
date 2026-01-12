@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FYDeviceObjc: 5cc94447bf4ecbae5a1f8a6a22a0a083383c1d8b
+  FYDeviceObjc: 5495edbdebb4e256fabe625c542c9c429d6b0351
 
 PODFILE CHECKSUM: d0dbacc1aae102d212e39450adfd60bc00f8f48a
 

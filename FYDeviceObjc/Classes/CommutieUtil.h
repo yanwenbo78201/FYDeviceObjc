@@ -10,20 +10,20 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CommutieUtil : NSObject
-+ (NSDictionary *)getDeviceCommunicationInfo;
++ (NSDictionary *)getDeviceCommunicationInfo NS_SWIFT_NAME(deviceCommunicationInfo());
 
 // 设备网络连接相关方法
-+ (NSString *)getDeviceNetworkProxyStatus;
-+ (NSString *)getDeviceVPNConnectionStatus;
-+ (NSString *)getDeviceNetworkType;
-+ (NSString *)getDeviceNetworkDetailType;
-+ (NSString *)getDeviceMobileNetworkType;
-+ (NSDictionary *)getDeviceWiFiNetworkInfo;
++ (NSString *)getDeviceNetworkProxyStatus NS_SWIFT_NAME(deviceNetworkProxyStatus());
++ (NSString *)getDeviceVPNConnectionStatus NS_SWIFT_NAME(deviceVPNConnectionStatus());
++ (NSString *)getDeviceNetworkType NS_SWIFT_NAME(deviceNetworkType());
++ (NSString *)getDeviceNetworkDetailType NS_SWIFT_NAME(deviceNetworkDetailType());
++ (NSString *)getDeviceMobileNetworkType NS_SWIFT_NAME(deviceMobileNetworkType());
++ (NSDictionary *)getDeviceWiFiNetworkInfo NS_SWIFT_NAME(deviceWiFiNetworkInfo());
 
 // 网络状态检测辅助方法
-+ (BOOL)isDeviceNetworkReachable;
-+ (BOOL)isDeviceNetworkUsingWiFi;
-+ (BOOL)isDeviceNetworkUsingCellular;
++ (BOOL)isDeviceNetworkReachable NS_SWIFT_NAME(isNetworkReachable());
++ (BOOL)isDeviceNetworkUsingWiFi NS_SWIFT_NAME(isNetworkUsingWiFi());
++ (BOOL)isDeviceNetworkUsingCellular NS_SWIFT_NAME(isNetworkUsingCellular());
 
 @end
 

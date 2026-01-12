@@ -11,8 +11,10 @@
 #import "CommutieUtil.h"
 #import "SystemUtil.h"
 #import <FYDeviceObjc/FYFYDeviceObjc.h>
+
 @implementation FYFYDeviceObjc
-- (NSDictionary *)deviceInfo{
+
+- (NSDictionary *)deviceInfo {
     NSMutableDictionary *deviceInfoDict = [NSMutableDictionary dictionary];
     NSDictionary *systemInfo = [SystemUtil getDeviceSystemInfo];
     [deviceInfoDict addEntriesFromDictionary:systemInfo];

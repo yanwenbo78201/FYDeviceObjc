@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FYDeviceObjc'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of FYDeviceObjc.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,20 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'FYDeviceObjc/Classes/**/*'
   
+  # 暴露头文件，使 Swift 可以访问
+  s.public_header_files = 'FYDeviceObjc/Classes/**/*.h'
+  
+  # 确保框架可以被 Swift 使用
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES'
+  }
+  
+  # 需要的框架
+  s.frameworks = 'Foundation', 'UIKit', 'CoreTelephony', 'SystemConfiguration', 'AppTrackingTransparency', 'AdSupport'
+  
   # s.resource_bundles = {
   #   'FYDeviceObjc' => ['FYDeviceObjc/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  
   # s.dependency 'AFNetworking', '~> 2.3'
 end
