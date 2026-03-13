@@ -1,6 +1,6 @@
 {
   "name": "FYDeviceObjc",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of FYDeviceObjc.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yanwenbo78201/FYDeviceObjc",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yanwenbo78201/FYDeviceObjc.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "15.0"
