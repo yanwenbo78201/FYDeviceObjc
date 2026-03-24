@@ -126,18 +126,9 @@
     
     double numberBytes = 1.0 * bytes;
     double totalGB = numberBytes / (1024 * 1024 * 1024);
-    double totalMB = numberBytes / (1024 * 1024);
     
     NSString *formattedSize = nil;
-    
-    if (totalGB >= 1.0) {
-        formattedSize = [NSString stringWithFormat:@"%.2f GB", totalGB];
-    } else if (totalMB >= 1.0) {
-        formattedSize = [NSString stringWithFormat:@"%.2f MB", totalMB];
-    } else {
-        formattedSize = [self formatBytesWithCommas:bytes];
-    }
-    
+    formattedSize = [NSString stringWithFormat:@"%.6f GB", totalGB];
     return formattedSize;
 }
 
