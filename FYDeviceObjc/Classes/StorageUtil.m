@@ -79,7 +79,7 @@
         return -1;
     }
     
-    natural_t usedMemoryBytes = [self calculateUsedMemory:vmStats pageSize:pageSize];
+    double usedMemoryBytes = [self calculateUsedMemory:vmStats pageSize:pageSize];
     double usedMemoryGB = [self convertBytesToGB:usedMemoryBytes];
     
     return usedMemoryGB;
@@ -212,7 +212,7 @@
     return (double)((vmStats.active_count + vmStats.inactive_count + vmStats.wire_count) * pageSize);
 }
 
-+ (double)convertBytesToGB:(natural_t)bytes {
++ (double)convertBytesToGB:(double)bytes {
     return ((double)bytes / 1024.0) / 1024.0 / 1024.0;
 }
 
